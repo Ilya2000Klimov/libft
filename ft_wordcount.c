@@ -6,7 +6,7 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/02 15:38:33 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/07 19:56:02 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/07 20:45:14 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,5 @@ size_t	ft_wordcount(char const *s, char c)
 		while (*s == c && *s)
 			s++;
 	}
+	return i;
 }
