@@ -3,28 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aikhatam <aikhatam@student.42.fr>          +#+  +:+       +#+        */
+/*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/28 01:21:20 by aikhatam          #+#    #+#             */
-/*   Updated: 2019/09/28 02:44:31 by aikhatam         ###   ########.fr       */
+/*   Created: 2019/09/28 15:35:27 by iklimov           #+#    #+#             */
+/*   Updated: 2019/10/04 23:05:00 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strtrim(char const *s)
 {
 	size_t	i;
 	char	*trim;
 
-	if (*s)
+	if (!s)
 		return (NULL);
 	while (*s == ' ' || *s == '\n' || *s == '\t')
 		s++;
 	i = ft_strlen(s);
-	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
+	while (i > 0 && (s[i - 1] == ' ' || s[i - 1] == '\n' || s[i - 1] == '\t'))
 		i--;
-	if(!(*trim = malloc((i + 2)*(char))))
+	if (!(trim = malloc((i + 1) * sizeof(char))))
 		return (NULL);
-	return (strncpy(trim, s, (i + 2)));
+	trim = ft_strncpy(trim, s, (i));
+	trim[i] = '\0';
+	return (trim);
 }

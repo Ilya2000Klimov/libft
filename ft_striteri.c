@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aikhatam <aikhatam@student.42.fr>          +#+  +:+       +#+        */
+/*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/26 20:22:06 by iklimov           #+#    #+#             */
-/*   Updated: 2019/09/27 22:08:40 by aikhatam         ###   ########.fr       */
+/*   Created: 2019/09/28 15:30:47 by iklimov           #+#    #+#             */
+/*   Updated: 2019/10/03 13:27:53 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	unsigned int i;
 
 	i = -1;
-	while (s[++i] && s && f)
+	while (s && s[++i] && f)
 		f(i, (s + i));
 }

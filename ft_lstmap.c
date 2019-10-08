@@ -1,20 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_islower.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/27 14:32:25 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/02 16:36:13 by iklimov          ###   ########.fr       */
+/*   Created: 2019/09/29 21:43:56 by iklimov           #+#    #+#             */
+/*   Updated: 2019/10/02 20:39:14 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_islower(int c)
+t_list	*ft_lstmap(t_list *lst, t_list * (*f)(t_list *elem))
 {
-	if (c >= 97 && c <= 122)
-		return (1);
-	return (0);
+    t_list	*new;
+
+	if (!lst)
+		return (NULL);
+	new = f(lst);
+	new->next = ft_lstmap(lst->next, f);
+	return (new);
 }

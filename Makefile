@@ -6,7 +6,7 @@
 #    By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/23 20:46:39 by iklimov           #+#    #+#              #
-#    Updated: 2019/09/27 14:35:56 by iklimov          ###   ########.fr        #
+#    Updated: 2019/10/03 20:20:33 by iklimov          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,14 +66,18 @@ SRC =	ft_memset.c \
 			ft_putstr_fd.c \
 			ft_putendl_fd.c \
 			ft_putnbr_fd.c \
-				# ft_lstnew.c \
-				# ft_lstdelone.c \
-				# ft_lstdel.c \
-				# ft_lstadd.c \
-				# ft_lstiter.c \
-				# ft_lstmap.c \
-					ft_islower(int c) \
-					ft_isupper(int c) \
+				ft_lstnew.c \
+				ft_lstdelone.c \
+				ft_lstdel.c \
+				ft_lstadd.c \
+				ft_lstiter.c \
+				ft_lstmap.c \
+					ft_islower.c \
+					ft_isupper.c \
+					ft_strtrimchar.c \
+					ft_intlength.c \
+					ft_wordcount.c \
+					ft_wordlen.c \
 
 OBJ = $(SRC:.c=.o)
 

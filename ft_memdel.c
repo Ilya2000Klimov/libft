@@ -6,7 +6,7 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/26 08:31:15 by iklimov           #+#    #+#             */
-/*   Updated: 2019/09/26 08:44:33 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/02 21:23:50 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,12 @@
 
 void ft_memdel(void **ap)
 {
-	free(*ap);
-	*ap = NULL;
+	if (ap)
+	{
+		if(*ap != NULL)
+		{	
+			free(*ap);
+			*ap = NULL;
+		}
+	}
 }

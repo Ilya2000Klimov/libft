@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_islower.c                                       :+:      :+:    :+:   */
+/*   ft_lstdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/27 14:32:25 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/02 16:36:13 by iklimov          ###   ########.fr       */
+/*   Created: 2019/09/29 21:42:26 by iklimov           #+#    #+#             */
+/*   Updated: 2019/10/03 14:46:36 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_islower(int c)
+void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
-	if (c >= 97 && c <= 122)
-		return (1);
-	return (0);
+	if ((**alst).next)
+		ft_lstdel(&(**alst).next, del);
+	del((**alst).content, (**alst).content_size);
+	free(*alst);
+	*alst = NULL;
 }

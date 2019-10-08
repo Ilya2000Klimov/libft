@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_islower.c                                       :+:      :+:    :+:   */
+/*   ft_intlength.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/27 14:32:25 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/02 16:36:13 by iklimov          ###   ########.fr       */
+/*   Created: 2019/10/02 15:44:57 by iklimov           #+#    #+#             */
+/*   Updated: 2019/10/02 16:36:34 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_islower(int c)
+int		ft_intlength(int n)
 {
-	if (c >= 97 && c <= 122)
-		return (1);
-	return (0);
+	int	i;
+
+	i = 0;
+	while ((n / i++) > 0)
+		continue ;
+	if (n < 0)
+		return (i);
+	return (i - 1);
 }

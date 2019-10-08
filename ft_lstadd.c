@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_islower.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/27 14:32:25 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/02 16:36:13 by iklimov          ###   ########.fr       */
+/*   Created: 2019/09/29 21:42:56 by iklimov           #+#    #+#             */
+/*   Updated: 2019/10/02 18:16:34 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_islower(int c)
+void ft_lstadd(t_list **alst, t_list *new)
 {
-	if (c >= 97 && c <= 122)
-		return (1);
-	return (0);
+    new->next = *alst;
+	*alst = new;
 }

@@ -6,7 +6,7 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/19 17:03:07 by iklimov           #+#    #+#             */
-/*   Updated: 2019/09/26 19:22:00 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/02 16:22:16 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,5 +92,9 @@ t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void			ft_lstaddend(t_list **alst, t_list *new);
 int				ft_atoi_base(char *str, char *base);
 char			*ft_itoa_base(int value, char *base);
+char			*ft_strtrimchar(char const *s, char c);
+size_t			ft_wordcount(char const *s, char c);
+size_t			ft_wordlen(char const *s, char c);
+int				ft_intlength(int n);
 
 #endif
