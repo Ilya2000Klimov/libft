@@ -6,7 +6,7 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/02 15:40:15 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/02 15:40:23 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/07 22:47:46 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_wordlen(char const *s, char c)
 {
-	size_t	size;
+	size_t	i;
 
-	size = 0;
-	while (s[size] && s[size] != c)
-		++size;
-	return (size);
+	i = 0;
+	while (s[i] && s[i] != c)
+		i++;
+	return (i);
 }
