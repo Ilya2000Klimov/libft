@@ -6,7 +6,7 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/02 15:44:57 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/02 16:36:34 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/08 16:32:46 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,16 @@
 int		ft_intlength(int n)
 {
 	int	i;
+	int sign;
 
 	i = 0;
-	while ((n / i++) > 0)
-		continue ;
-	if (n < 0)
-		return (i);
-	return (i - 1);
+	sign = 0;
+	if (n <= 0)
+		sign = 1;
+	while (n != 0)
+	{
+		i++;
+		n = n / 10;
+	}
+	return (i + sign);
 }
