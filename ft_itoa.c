@@ -6,11 +6,10 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/28 15:31:41 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/08 17:10:44 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/09 17:12:09 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 #include "libft.h"
 
 char	*ft_itoa(int n)

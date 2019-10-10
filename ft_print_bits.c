@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_print_bits.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/26 08:45:14 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/09 17:13:33 by iklimov          ###   ########.fr       */
+/*   Created: 2019/10/09 20:58:56 by iklimov           #+#    #+#             */
+/*   Updated: 2019/10/09 22:16:35 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnew(size_t n)
+void	ft_print_bits(unsigned char octet)
 {
-	char	*s;
+	int				i;
+	unsigned char	bit;
 
-	if (!(s = ft_memalloc((n + 1) * sizeof(char))))
-		return (NULL);
-	ft_bzero(s, n);
-	return (s);
+	i = 8;
+	while (i--)
+	{
+		bit = (octet >> i & 1) + '0';
+		write(1, &bit, 1);
+	}
 }

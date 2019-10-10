@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_skip.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/26 08:45:14 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/09 17:13:33 by iklimov          ###   ########.fr       */
+/*   Created: 2019/10/09 21:46:43 by iklimov           #+#    #+#             */
+/*   Updated: 2019/10/09 22:13:20 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnew(size_t n)
+const char	*ft_skip(char const *s, char c)
 {
-	char	*s;
-
-	if (!(s = ft_memalloc((n + 1) * sizeof(char))))
-		return (NULL);
-	ft_bzero(s, n);
+	while (*s && *s == c)
+		s++;
 	return (s);
 }

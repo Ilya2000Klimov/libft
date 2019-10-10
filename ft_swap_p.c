@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_swap_p.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/26 08:45:14 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/09 17:13:33 by iklimov          ###   ########.fr       */
+/*   Created: 2019/10/09 20:03:01 by iklimov           #+#    #+#             */
+/*   Updated: 2019/10/09 21:53:38 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+**	Swaps pointers.
+*/
+
 #include "libft.h"
 
-char	*ft_strnew(size_t n)
+void	ft_swap_p(void **a, void **b)
 {
-	char	*s;
+	void *temp;
 
-	if (!(s = ft_memalloc((n + 1) * sizeof(char))))
-		return (NULL);
-	ft_bzero(s, n);
-	return (s);
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }

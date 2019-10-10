@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_print_hex.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/26 08:45:14 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/09 17:13:33 by iklimov          ###   ########.fr       */
+/*   Created: 2019/10/09 20:58:11 by iklimov           #+#    #+#             */
+/*   Updated: 2019/10/09 22:16:28 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnew(size_t n)
+void	ft_print_hex(size_t nb)
 {
-	char	*s;
+	char	*str;
 
-	if (!(s = ft_memalloc((n + 1) * sizeof(char))))
-		return (NULL);
-	ft_bzero(s, n);
-	return (s);
+	str = "0123456789abcdef";
+	if (nb >= 16)
+		ft_print_hex(nb / 16);
+	ft_putchar(str[nb % 16]);
 }

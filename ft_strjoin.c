@@ -6,13 +6,13 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/28 12:09:39 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/03 19:38:26 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/09 17:08:11 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const*s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
 	size_t	i;

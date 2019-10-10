@@ -6,13 +6,13 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/28 15:33:02 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/08 17:19:37 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/09 17:16:19 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_putstr_fd(char const *s, int fd)
+void	ft_putstr_fd(char const *s, int fd)
 {
 	if (!s)
 		return ;

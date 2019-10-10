@@ -6,11 +6,11 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/26 08:48:19 by iklimov           #+#    #+#             */
-/*   Updated: 2019/09/26 10:21:00 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/09 22:08:11 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	ft_strclr(char *s)
 {

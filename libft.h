@@ -6,7 +6,7 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/19 17:03:07 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/02 16:22:16 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/09 22:14:17 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,5 +96,10 @@ char			*ft_strtrimchar(char const *s, char c);
 size_t			ft_wordcount(char const *s, char c);
 size_t			ft_wordlen(char const *s, char c);
 int				ft_intlength(int n);
+int				ft_intsqrt(int nb);
+void			ft_print_bits(unsigned char octet);
+void			ft_print_hex(size_t nb);
+const char		*ft_skip(char const *s, char c);
+void			ft_swap_p(void **a, void **b);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/23 20:46:39 by iklimov           #+#    #+#              #
-#    Updated: 2019/10/03 20:20:33 by iklimov          ###   ########.fr        #
+#    Updated: 2019/10/09 22:07:26 by iklimov          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -78,6 +78,11 @@ SRC =	ft_memset.c \
 					ft_intlength.c \
 					ft_wordcount.c \
 					ft_wordlen.c \
+					ft_print_bits.c \
+					ft_print_hex.c \
+					ft_skip.c \
+					ft_swap_p.c \
+					ft_intsqrt.c \
 
 OBJ = $(SRC:.c=.o)
 

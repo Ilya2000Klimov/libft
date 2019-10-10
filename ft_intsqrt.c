@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_intsqrt.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/26 08:45:14 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/09 17:13:33 by iklimov          ###   ########.fr       */
+/*   Created: 2019/10/09 21:00:38 by iklimov           #+#    #+#             */
+/*   Updated: 2019/10/09 21:18:41 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnew(size_t n)
+int	ft_intsqrt(int nb)
 {
-	char	*s;
+	int root;
 
-	if (!(s = ft_memalloc((n + 1) * sizeof(char))))
-		return (NULL);
-	ft_bzero(s, n);
-	return (s);
+	root = 1;
+	while (root * root < nb)
+		root++;
+	if (root * root == nb)
+		return (root);
+	return (0);
 }
