@@ -6,9 +6,13 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 20:58:11 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/09 22:16:28 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/10 18:17:57 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	prints an int in hex with lowercase letters a-f cerving as 11-15
+*/
 
 #include "libft.h"
 

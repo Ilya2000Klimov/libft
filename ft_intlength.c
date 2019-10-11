@@ -6,9 +6,13 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/02 15:44:57 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/08 16:32:46 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/10 18:14:59 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	The function counts the size of the integer
+*/
 
 #include "libft.h"
 

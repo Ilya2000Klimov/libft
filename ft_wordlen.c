@@ -6,9 +6,13 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/02 15:40:15 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/09 21:45:46 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/10 18:29:16 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	counts the size of the word ended by the delimeter passed as char c
+*/
 
 #include "libft.h"
 

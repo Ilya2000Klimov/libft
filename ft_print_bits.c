@@ -6,9 +6,13 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 20:58:56 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/09 22:16:35 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/10 18:16:25 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	prints by bits the char passed as param
+*/
 
 #include "libft.h"
 

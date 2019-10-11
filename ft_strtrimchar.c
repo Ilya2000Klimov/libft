@@ -6,9 +6,14 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/28 15:36:20 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/05 20:12:37 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/10 18:22:09 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**	trims off the characters passed as the param and eturns a fresh string
+**	without the exxess characters.
+*/
 
 #include <libft.h>
 
