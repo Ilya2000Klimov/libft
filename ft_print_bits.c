@@ -6,7 +6,7 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 20:58:56 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/10 18:16:25 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/10/11 15:51:54 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,10 @@ void	ft_print_bits(unsigned char octet)
 		bit = (octet >> i & 1) + '0';
 		write(1, &bit, 1);
 	}
+}
+
+int main()
+{
+	char c = '\n';
+	ft_print_bits(c);
 }

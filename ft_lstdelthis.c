@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstdelthis.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/17 16:19:07 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/13 10:31:05 by iklimov          ###   ########.fr       */
+/*   Created: 2019/10/18 19:38:12 by iklimov           #+#    #+#             */
+/*   Updated: 2019/10/18 19:57:43 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t		ft_strlen(const char *s)
+void	ft_lstdelthis(t_list **alst)
 {
-	size_t i;
+	t_list	*temp;
 
-	i = 0;
-	while (*s)
-	{
-		s++;
-		i++;
-	}
-	return (i);
+	temp = (*alst)->next;
+	free((**alst).content);
+	(**alst).content_size = 0;
+	free(*alst);
+	*alst = temp;
 }
