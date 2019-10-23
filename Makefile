@@ -6,7 +6,7 @@
 #    By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/23 20:46:39 by iklimov           #+#    #+#              #
-#    Updated: 2019/10/22 17:27:29 by iklimov          ###   ########.fr        #
+#    Updated: 2019/10/22 17:36:20 by iklimov          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -101,12 +101,6 @@ LSTSRC =	ft_lstnew.c \
 			ft_list_findsize.c \
 			ft_lstdelthis.c \
 
-# SOURCEFILES = $(MEMSRC)
-# SOURCEFILES += $(STRSRC)
-# SOURCEFILES += $(MATHSRC)
-# SOURCEFILES += $(PUTSRC)
-# SOURCEFILES += $(LSTSRC)
-
 SRC = $(patsubst %.c, $(MEM)/%.c, $(MEMSRC))
 SRC += $(patsubst %.c, $(STR)/%.c, $(STRSRC))
 SRC += $(patsubst %.c, $(MATH)/%.c, $(MATHSRC))
@@ -114,12 +108,6 @@ SRC += $(patsubst %.c, $(LST)/%.c, $(LSTSRC))
 SRC += $(patsubst %.c, $(PUT)/%.c, $(PUTSRC))
 
 OFILES = $(SRC:.c=.o)
-
-# OFILES = $(MEMSRC:.c=.o)
-# OFILES += $(STRSRC:.c=.o)
-# OFILES += $(MATHSRC:.c=.o)
-# OFILES += $(PUTSRC:.c=.o)
-# OFILES += $(LSTSRC:.c=.o)
 
 OBJ = $(patsubst %.o, $(OBJF)/%.o, $(OFILES))
 
