@@ -6,7 +6,7 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/19 17:03:07 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/22 17:23:36 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/11/01 18:33:32 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ char			*ft_strtrimchar(char const *s, char c);
 size_t			ft_wordcount(char const *s, char c);
 size_t			ft_wordlen(char const *s, char c);
 const char		*ft_skip(char const *s, char c);
+char			*ft_strjoinreal(char **s1, char *s2);
 
 /*
 **	lists

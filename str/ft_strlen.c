@@ -6,7 +6,7 @@
 /*   By: iklimov <iklimov@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/17 16:19:07 by iklimov           #+#    #+#             */
-/*   Updated: 2019/10/13 10:31:05 by iklimov          ###   ########.fr       */
+/*   Updated: 2019/11/01 17:53:20 by iklimov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t		ft_strlen(const char *s)
 	size_t i;
 
 	i = 0;
-	while (*s)
+	while (s && *s)
 	{
 		s++;
 		i++;
